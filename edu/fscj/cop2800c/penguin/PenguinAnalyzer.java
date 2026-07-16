@@ -14,7 +14,7 @@ public class PenguinAnalyzer {
     private List<PenguinData> penguinList;
 
 
-    // Read all columns from the CSV File
+
     public void readPenguinData() {
 
         penguinList = new ArrayList<>();
@@ -24,7 +24,7 @@ public class PenguinAnalyzer {
 
             String line;
 
-            // Skip header
+
             reader.readLine();
 
             while ((line = reader.readLine()) != null) {
@@ -89,7 +89,6 @@ public class PenguinAnalyzer {
     }
 
 
-    // Print formatted table of penguin data
     public void printPenguinData() {
 
         System.out.printf("%-5s %-10s %-10s %-10s %-15s %-10s %-8s%n",
@@ -120,7 +119,6 @@ public class PenguinAnalyzer {
     }
 
 
-    // Write processed data to an output file
     public void writePenguinData() {
 
         try (PrintWriter writer =
